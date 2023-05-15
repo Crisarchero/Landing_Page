@@ -1,0 +1,185 @@
+:root,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georama', sans-serif;
+    font-weight:normal;
+}
+
+
+
+body {
+    background-color: #F5f5f5;
+}
+.btn{
+    background-color:#d4e2ee;
+    text-decoration:none;
+    color:black;
+    padding:10px;
+    text-align:center;
+}
+
+/*Header styles*/
+h1 {
+    font-size: 1rem;
+    justify-self: start;
+    margin-right: auto;
+}
+
+header {
+    margin-bottom: 150px;
+    color: #276814;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/palm_tree.jpg');
+    background-position: right;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+
+header div {
+    margin: auto 0;
+}
+
+nav {
+    background-color: #F5f5f5;
+
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+#intro-header {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+#intro-header a {
+    margin: auto;
+    color: black;
+    border: solid #276814 2px;
+    text-decoration: none;
+    margin-top: 50px;
+    padding: 5px;
+}
+
+#intro-header h2 {
+    font-size: 3rem;
+    background-color: #b1d1f077;
+    padding: 10px 0px;
+}
+
+/*About section styling*/
+
+#about-us {
+    height: 250px;
+    display: flex;
+}
+
+#about-us p {
+    margin: auto;
+
+}
+
+.transparent-bg {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.3;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+
+/*Styling for the vacation plan sections*/
+.plans{
+    margin: 100px 0;
+    display:flex;
+    flex-direction:column;
+}
+
+.plans .btn{
+    margin:auto;
+}
+
+.plans h3 {
+    text-align: center;
+}
+.plans h4{
+    position:relative;
+    text-align:center;
+    color:#fcfcfc;
+    grid-area:1/1;
+    text-shadow: 1px 1px 1px #7a7a7a,
+                1px -1px 1px #7a7a7a,
+                -1px 1px 1px #7a7a7a,
+                -1px -1px 1px #7a7a7a;
+}
+
+.plans ul {
+    width:100%;
+    padding: 50px 5%;
+    display: flex;
+    list-style-type:none;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.plans li{
+    margin: 0px 10px;
+    display:grid;
+    grid-template-rows:1fr;
+    grid-template-columns:1fr;
+
+}
+.plans img{
+    grid-area:1/1;
+    width:200px;
+    height:200px;
+}
+
+/*Custom Plans*/
+
+#custom-plans{
+    padding:5%;
+}
+
+#custom-plans div{
+    margin:10px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+#custom-plans p {
+    width:50%;
+    margin:10px 0px;
+}
+
+/*Styling the additional services section*/
+#additional-services{
+    margin:100px 0px;
+    padding:5%;
+}
+
+#additional-services ul{
+    list-style-type:none;
+    display:flex;
+    justify-content:space-around;
+    padding:10px 25px;
+    background-color:#99cd99;
+}
+
+#additional-services li {
+    padding:none;
+}
