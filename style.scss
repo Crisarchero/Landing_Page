@@ -211,28 +211,34 @@ nav {
 
 /*Custom Plans*/
 
-#custom-plans { 
+#custom-plans {
 
 
-    background-color:rgb(215, 230, 232);
+    background-color: $bg;
     padding: 5% 10%;
-   
+    background-image: url("../images/background.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+
     div {
-        margin: 10px ;
+        margin: 10px;
 
         p {
-    
+
             margin: 50px 0px;
         }
 
         ul {
             list-style-type: none;
-            margin:50px 0px;
+            margin: 50px 0px;
+
             li {
-                margin:25px 0;
-                display:flex;
-                align-items:center;
-                gap:10px;
+                margin: 25px 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
 
                 i {
                     color: $primary;
@@ -253,13 +259,14 @@ nav {
 
 /*Styling the additional services section*/
 #additional-services {
-   
+
     margin: 50px 0px;
     padding: 5%;
-    
-    h2{
-      text-align:center;
+
+    h2 {
+        text-align: center;
     }
+
     ul {
         list-style-type: none;
         display: flex;
@@ -293,6 +300,39 @@ nav {
         color: white;
         @include base.theme($theme: textOutline);
     }
+
+
+}
+
+footer {
+
+    font-size: 0.8rem;
+    color: white;
+    background-color: $secondary;
+    padding: 10px;
+
+    ul {
+        margin: 10px 0px;
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+    li {
+        margin: 5px;
+    }
+
+    ul:first-of-type {
+        li {
+            margin: 5px 10px;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
 
 
 }
