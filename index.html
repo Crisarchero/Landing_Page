@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -11,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <title>Landing Page</title>
 </head>
 
@@ -20,13 +24,37 @@
 
             <ul>
                 <h1>EasyVacations</h1>
-                <li>Premade Plans</li>
-                <li>Custom Plans</li>
-                <li>Hotels</li>
-                <li>Flights</li>
-                <li>About</li>
-            </ul>
+                <div id="nav-items">
+                    <li><a href="#">
 
+                            Premade Plans
+                        </a>
+                    </li>
+                    <li><a href="#">
+
+                            Custom Plans
+                        </a>
+                    </li>
+                    <li><a href="#">
+
+                            Hotels
+                        </a>
+                    </li>
+                    <li><a href="#">
+
+                            Flights
+                        </a>
+                    </li>
+                    <li><a href="#">
+
+                            About
+                        </a>
+                    </li>
+                </div>
+            </ul>
+            <button id="nav-button">
+                <i class="bi bi-list"></i>
+            </button>
         </nav>
         <div id="intro-header">
             <h2>VACATION PLANNING<br>MADE EASY</h2>
@@ -164,30 +192,30 @@
     <footer>
 
         <ul>
-            <li><i class="bi bi-twitter"></i></li>
-            <li><i class="bi bi-instagram"></i></li>
-            <li><i class="bi bi-facebook"></i></li>
+            <li><a href = #><i class="bi bi-twitter"></i></a></li>
+            <li><a href = #><i class="bi bi-instagram"></i></a></li>
+            <li><a href = #><i class="bi bi-facebook"></i></a></li>
         </ul>
         <ul>
-            <li>Home</li>
-            <li>All Plans</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Contact</li>
+            <li><a href=#>Home</a></li>
+            <li><a href=#>All Plans</a></li>
+            <li><a href=#> Services</a></li>
+            <li><a href=#>About</a></li>
+            <li><a href=#>Contact</a></li>
         </ul>
 
 
 
 
         <ul>
-       
+
             <li>May 19, 2023</li>
             <li>All Rights Reserved</li>
 
 
 
         </ul>
-           
+
     </footer>
     <script src="index.js"></script>
 </body>

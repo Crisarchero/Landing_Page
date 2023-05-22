@@ -11,12 +11,63 @@ $xl: 1200px;
         -1px -1px 1px #7a7a7a;
 }
 
-@mixin breakpoint-md-plans-ul{
-    @media (min-width: $md){
-            flex-direction:row;
-            justify-content:center;
+@mixin breakpoint-md-flex {
+    @media (min-width: $md) {
+        flex-direction: row;
+        justify-content: center;
     }
 }
+
+@mixin nav-button {
+    @media(max-width:$md) {
+        display: block;
+        position: static;
+        z-index: 1;
+    }
+}
+
+@mixin breakpoint-nav {
+    @media(max-width:$md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@mixin breakpoint-nav-items {
+    @media(max-width: $md) {
+        flex-direction: column;
+        text-align: center;
+
+        #nav-items {
+
+            top: 30px;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+            display: none;
+
+            li {
+                padding: 0;
+                margin: 0;
+            }
+            a:hover{
+                position:relative;
+                bottom:5px;
+            }
+
+        }
+    }
+
+    @media(min-width:$md) {
+        #nav-items {
+            display: flex !important; 
+            position: static;
+
+        }
+    }
+}
+
 :root,
 * {
     box-sizing: border-box;

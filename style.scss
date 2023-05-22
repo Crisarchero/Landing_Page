@@ -9,12 +9,33 @@ $bg: #F5f5f5;
 
 body {
     background-color: $bg;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: $text-primary;
+
 }
 
 h3 {
     font-size: 1.5em;
 
 }
+
+button {
+    border: solid 1px $primary;
+    border-radius: 2px;
+    background-color: none;
+}
+
+button:hover {
+    background-color: $primary;
+    transform: scale(1.1);
+    color: white;
+    cursor: pointer;
+}
+
 
 .btn {
     background-color: #1a71bc;
@@ -23,6 +44,11 @@ h3 {
     padding: 10px;
     text-align: center;
     border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    background-color: #11178c
 }
 
 /*Header styles*/
@@ -38,7 +64,7 @@ header {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    background-image: url('../images/palm_tree.jpg');
+    background-image: url('../images/palm_tree.png');
     background-position: right;
     background-size: 50%;
     background-repeat: no-repeat;
@@ -51,6 +77,8 @@ header {
 
 nav {
     background-color: $bg;
+    max-height: 25px;
+    @include base.breakpoint-nav;
 
     ul {
         display: flex;
@@ -58,11 +86,24 @@ nav {
         justify-content: end;
         padding: 5px;
 
+
+        @include base.breakpoint-nav-items;
+
         li {
             margin: 0px 15px;
+            background-color: $bg;
         }
+
     }
 
+
+
+    i {
+        @include base.nav-button;
+        display: none;
+        float: right;
+
+    }
 
 }
 
@@ -156,7 +197,6 @@ nav {
         text-align: center;
         margin: 0px auto 25px;
         width: max(50%, 250px);
-
     }
 
     .btn {
@@ -182,13 +222,14 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-        @include base.breakpoint-md-plans-ul;
+        @include base.breakpoint-md-flex;
         list-style-type: none;
         flex-wrap: wrap;
         gap: 10px;
     }
 
     li {
+        border-radius:5px;
         margin: 0px 10px;
         display: grid;
         grid-template-rows: 1fr;
@@ -197,12 +238,17 @@ nav {
 
     }
 
+
     img {
         border-radius: 5px;
         grid-area: 1/1;
         width: 200px;
         height: 200px;
+
     }
+
+
+    
 }
 
 
@@ -216,7 +262,7 @@ nav {
 
     background-color: $bg;
     padding: 5% 10%;
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/custom_services_bg.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -271,7 +317,7 @@ nav {
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        @include base.breakpoint-md-plans-ul;
+        @include base.breakpoint-md-flex;
         padding: 50px 25px;
         border-radius: 5px;
     }
@@ -284,7 +330,7 @@ nav {
 
         i {
             color: $primary;
-            font-size: 4em;
+            font-size: 4rem;
             margin: 10px 0px;
         }
 
@@ -317,10 +363,20 @@ footer {
         flex-direction: row;
         list-style-type: none;
         justify-content: center;
+
+
+        a:hover {
+            color: rgb(204, 203, 203);
+            cursor: pointer;
+        }
     }
 
     li {
         margin: 5px;
+
+        a {
+            color: white;
+        }
     }
 
     ul:first-of-type {
@@ -330,9 +386,9 @@ footer {
             i {
                 font-size: 1.5rem;
             }
+
         }
     }
-
 
 
 }
