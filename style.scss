@@ -6,7 +6,12 @@ $primary: #78cf53ac;
 $secondary: #1a71bc;
 $bg: #F5f5f5;
 
-
+*{
+    opacity:0;
+}
+html{
+    scroll-behavior:smooth;
+}
 body {
     background-color: $bg;
     overflow-x: hidden;
@@ -15,7 +20,7 @@ body {
 a {
     text-decoration: none;
     color: $text-primary;
-
+    transition: 0.5s ease;
 }
 
 h3 {
@@ -32,6 +37,7 @@ button {
 button:hover {
     background-color: $primary;
     transform: scale(1.1);
+    transition: 0.5s ease;
     color: white;
     cursor: pointer;
 }
@@ -48,6 +54,7 @@ button:hover {
 
 .btn:hover {
     transform: scale(1.1);
+    transition: 0.2s ease;
     background-color: #11178c
 }
 
@@ -272,7 +279,6 @@ nav {
         margin: 10px;
 
         p {
-
             margin: 50px 0px;
         }
 
@@ -294,6 +300,7 @@ nav {
             }
         }
 
+    
     }
 
 

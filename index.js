@@ -1,8 +1,13 @@
 
 
 $(document).ready(() => {
+    $("*").animate({opacity:'1'}, "slow")
+    $('.transparent-bg').animate({opacity:'0.5'})
+    
+    
     $("#nav-button").click(() => {
-        $("#nav-items").toggle();
+       
+        $("#nav-items").animate({height:'toggle'})
     })
     
     //Some jquery for practice.
