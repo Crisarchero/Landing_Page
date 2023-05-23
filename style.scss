@@ -5,7 +5,17 @@ $text-primary: #276814;
 $primary: #78cf53ac;
 $secondary: #1a71bc;
 $bg: #F5f5f5;
-
+:root{
+    font-size:15px;
+}
+:root,
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Georama', sans-serif;
+    font-weight: normal;
+}
 *{
     opacity:0;
 }
