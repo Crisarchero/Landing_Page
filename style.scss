@@ -134,7 +134,7 @@ nav {
 
 
 #intro-header {
-    width: 60%;
+    max-width:60%;
     display: flex;
     flex-direction: column;
     a {
@@ -142,12 +142,15 @@ nav {
         color: black;
         border: solid $primary 2px;
         text-decoration: none;
-        margin-top: 50px;
+        margin-top: 25px;
         padding: 5px;
+        font-size:1.5rem;
+        @include base.breakpoint-sm-button;
     }
    h2 {
         margin: 0px 5px;
-        font-size: 5.3rem;
+        font-size:2.5rem;
+        @include base.breakpoint-sm-font;
         background-color: #b1d1f077;
         border: solid 3px white;
         outline: solid 4px $primary;

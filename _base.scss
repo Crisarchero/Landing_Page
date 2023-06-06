@@ -11,6 +11,19 @@ $xl: 1200px;
         -1px -1px 1px #7a7a7a;
 }
 
+@mixin breakpoint-sm-font{
+    @media (min-width:$sm){
+        font-size:5rem;
+    }
+}
+
+@mixin breakpoint-sm-button{
+    @media (min-width:$sm){
+        font-size:2rem;
+    }
+}
+
+
 @mixin breakpoint-md-flex {
     @media (min-width: $md) {
         flex-direction: row;
